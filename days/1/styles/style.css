@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo|Lato:700|Noto+Sans');
+/*
+font-family: 'Lato', sans-serif;
+font-family: 'Heebo', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+*/
+
+:root {
+	--dark-color: #2D3047;
+	--light-color: rgb(231, 238, 240);
+	--bright-color: #E0CA3C;
+  }
+  
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--light-color);
+}
+
+header { 
+	padding: 0;
+}
+
+footer {
+	width: 100%;
+	height: 200px;
+	background-color: var(--dark-color);
+	flex-shrink: 0;
+}
+
+header h1 {
+	background-color: var(--dark-color);
+	margin: 0;
+	padding: 40px;
+	text-align: center;
+	font-size: 60px;
+	color: var(--light-color);
+	font-family: 'Heebo', sans-serif;
+}
+
+h2 {
+	font-size: 37px;
+	font-family: 'Lato', sans-serif;
+}
+
+h3 {
+	font-size: 23px;
+}
+
+p {
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 23x;
+}
+
+a:link, a:visited, a:hover, a:active {
+	color: var(--light-color);
+}
+
+#content {
+	
+	flex: 1 0 auto;
+	margin: 0 auto;
+	width: 960px;
+	
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 300px;
+	height: 240px;
+	font-size: 23px;
+	font-family: 'Lato', sans-serif;
+	float: left;
+	margin: 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+.huge {
+	font-size: 157px;
+	margin: 0;
+	padding: 0;
+}
+
+.complete {
+	background-color: var(--bright-color);
+}
+
+.incomplete {
+	background-color: var(--dark-color);
+	color: var(--light-color);
+}
