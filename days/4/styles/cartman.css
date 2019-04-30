@@ -1,0 +1,30 @@
+:root {
+    --cartman-hat: #00b8c5;
+    --cartman-gloves: #ffe21c;
+    --cartman-skin: #fdeec3;
+    --cartman-jacket: #ec304b;
+    --cartman-pants: #75422f;
+    --cartman-shoes: #2b2935;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: chocolate;
+}
+
+#container {
+    height: 300px;
+    width: 275px;
+    background-color: chocolate;
+}
+
+#head {
+    position: absolute;
+    left: 12%;
+    top: 4%;
+    border-radius: 50%;
+    width: 74%;
+    height: 67%;
+    background-color: var(--cartman-skin);
+}
