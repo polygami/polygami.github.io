@@ -1,4 +1,4 @@
-var completedDays = 3;
+var completedDays = 4;
 var cards = document.getElementsByClassName("card");
 
 var progressBar = document.getElementById("progress-inner");
