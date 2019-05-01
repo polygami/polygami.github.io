@@ -10,21 +10,107 @@
 html, body {
     height: 100%;
     width: 100%;
-    background-color: chocolate;
+    background-color: whitesmoke;
 }
+
+.round {
+    border-radius: 50%;
+}
+
+/* #container {
+    height: 100vh;
+    width: 92vh;
+    background-color: red;
+    margin: auto;
+} */
 
 #container {
-    height: 300px;
-    width: 275px;
-    background-color: chocolate;
+    height: 92vh;
+    width: 100vh;
+    margin: auto;
 }
 
-#head {
+#container * {
     position: absolute;
+    overflow: hidden;
+}
+
+/* #head {
+    position: relative;
     left: 12%;
     top: 4%;
     border-radius: 50%;
     width: 74%;
-    height: 67%;
+    height: 65%;
     background-color: var(--cartman-skin);
+} */
+
+#head {
+    /* position: relative; */
+    left: 12%;
+    top: 4%;
+    width: 72.9%;
+    height: 65%;
+    background-color: var(--cartman-hat);
+}
+
+
+
+#hat-mask {
+    /* position: absolute; */
+    
+    box-shadow: -1px -5px #888888;;
+    background-color: var(--cartman-gloves);
+    left:-78%;
+    top: 25%;
+    width: 266%;
+    height: 421%;
+}
+
+#hat-mask2 {
+    /* position: absolute; */
+    background-color: var(--cartman-skin);
+    left:-78%;
+    top: 29%;
+    width: 266%;
+    height: 421%;
+    z-index: 2;
+}
+
+.eye {
+    background-color: white;
+    width: 24%;
+    height: 35%;
+    top: 31%;
+    z-index: 3;
+    box-shadow: -1px -5px #888888;;
+}
+#eye-left {
+    /* position: absolute; */
+    background-color: white;
+    left: 27%;
+    transform: rotate(22deg);
+}
+#eye-right {
+    /* position: absolute; */
+    background-color: white;
+    left: 52%;
+    transform: rotate(-22deg);
+}
+
+
+.pupil {
+    background-color: black;
+    width: 2.75%;
+    height: 3%;
+    top: 46%;
+    z-index: 4;
+}
+
+#pupil-left {
+    left: 42%;
+}
+
+#pupil-right {
+    left: 58%;
 }
