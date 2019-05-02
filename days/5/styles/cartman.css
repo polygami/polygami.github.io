@@ -17,14 +17,9 @@ html, body {
     border-radius: 50%;
 }
 
-/* #container {
-    height: 100vh;
-    width: 92vh;
-    background-color: red;
-    margin: auto;
-} */
-
 #container {
+    overflow: hidden;
+    position: relative;
     height: 92vh;
     width: 100vh;
     margin: auto;
@@ -35,18 +30,7 @@ html, body {
     overflow: hidden;
 }
 
-/* #head {
-    position: relative;
-    left: 12%;
-    top: 4%;
-    border-radius: 50%;
-    width: 74%;
-    height: 65%;
-    background-color: var(--cartman-skin);
-} */
-
 #head {
-    position: relative;
     left: 12%;
     top: 4%;
     width: 72.9%;
@@ -61,15 +45,12 @@ html, body {
 }
 
 #hat-mask {
-    /* position: absolute; */
-    
-    box-shadow: -1px -5px #888888;;
+    box-shadow: -1px -1px #888888;;
     background-color: var(--cartman-gloves);
     top: 25%;
 }
 
 #hat-mask2 {
-    /* position: absolute; */
     background-color: var(--cartman-skin);
     top: 29%;
     z-index: 2;
@@ -81,21 +62,19 @@ html, body {
     height: 35%;
     top: 31%;
     z-index: 3;
-    box-shadow: -1px -5px #888888;;
+    box-shadow: -1px -2px #888888;;
 }
+
 #eye-left {
-    /* position: absolute; */
     background-color: white;
     left: 27%;
     transform: rotate(22deg);
 }
 #eye-right {
-    /* position: absolute; */
     background-color: white;
     left: 52%;
     transform: rotate(-22deg);
 }
-
 
 .pupil {
     background-color: black;
@@ -119,7 +98,7 @@ html, body {
 }
 
 #mouth {
-    border-width: 4px;
+    border-width: 3px;
     left: 48%;
     top: 81%;
     width: 18%;
@@ -131,36 +110,142 @@ html, body {
 }
 
 #chin {
-    border-width: 2px;
+    border-width: 1px;
     left: 42%;
     top: 85%;
     width: 21%;
     height: 6%;
     border-bottom-left-radius: 45%;
     border-bottom-right-radius: 50%;
-    /* transform: skewX(45deg); */
     border-color: transparent transparent #000 transparent;
 }
 
 #neck {
-    border-width: 2px;
+    border-width: 1px;
     left: 3%;
     top: 1.7%;
     width: 97%;
     height: 94%;
     border-bottom-left-radius: 45%;
     border-bottom-right-radius: 50%;
-    /* transform: skewX(45deg); */
     border-color: transparent transparent #000 transparent;
 }
 
 #bobble {
     z-index: 5;
-    position: absolute;
     top: 0px;
     left: 36%;
     background-color: var(--cartman-gloves);
     width: 22%;
     height: 8%;
     clip-path: polygon(55% 0%, 59% 3%, 72% 8%, 78% 20%, 92% 24%, 100% 46%, 96% 89%, 79% 84%, 72% 97%, 59% 100%, 53% 88%, 34% 100%, 30% 98%, 28% 67%, 22% 98%, 6% 97%, 1% 82%, 2% 60%, 18% 39%, 27% 16%, 49% 11%);
+}
+
+#jacket {
+    overflow: hidden;
+    background-color: var(--cartman-jacket);
+    left: 3%;
+    top: 48%;
+    width: 92%;
+    height: 47%;
+    position: absolute;
+    clip-path: polygon(
+        /* left arm */
+        15% 0%, 10% 6%, 9% 8%, 0% 31%, 3% 62%,
+        /* left bottom corner */
+         5% 80%, 10% 88%, 17% 95%, 25% 100%,
+         /* bottom */
+         55% 100%, 64% 96%, 73% 90%, 90% 88%,
+         /* right bottom corner */
+         95% 84%, 97% 80%, 99% 75%, 99.4% 70%, 99.5% 60%,
+         /* right arm */
+         100% 25%, 97% 20%, 95% 11%, 91% 5%, 87% 3%
+    )
+}
+
+#pants {
+    background-color: var(--cartman-pants);
+    left: 9.7%;
+    top: 85.4%;
+    width: 80.5%;
+    height: 13.2%;
+    clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 5% 100%);
+}
+
+.black {
+    background-color: black;
+}
+
+#jacket-line {
+    left: 55%;
+    width: 3px;
+    height: 100%;
+    transform: rotate(1.5deg);
+}
+
+.button {
+    width: 1.6%;
+    height: 6.4%;
+}
+
+#button-1 {
+    top: 48%;
+    left: 51.5%;
+}
+
+#button-2 {
+    top: 68%;
+    left: 52%;
+}
+
+#button-3 {
+    top: 88%;
+    left: 51.5%;
+}
+
+.shoe {
+    background-color: var(--cartman-shoes);
+    height: 7%;
+    width: 40%;
+    bottom: -3%;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 40%;
+}
+
+#shoe-1 {
+    left: 12%;
+}
+#shoe-2 {
+    right: 12%;
+}
+
+.glove {
+    background-color: var(--cartman-gloves);
+}
+
+#glove-1 {
+    border-radius: 40%;
+    transform: skewX(8deg);
+    top: 62%;
+    width: 20%;
+    height: 15%;
+    
+    clip-path: polygon(
+        /* top left corner */
+        0% 0%, 35% 0%, 43% 4%, 47% 8%, 51% 12%,
+        /* right */
+        87% 42%, 91% 47%, 95% 55%,
+        /* bottom */
+        100% 100%, 0% 100%);
+}
+
+#glove-2 {
+    /* border-radius: 10% 30% 20% 50%; */
+    transform: rotate(-10deg);
+    top: 60%;
+    right: 1%;
+    width: 16%;
+    height: 16%;
+
+    clip-path: polygon(67% 1%, 49% 2%, 34% 7%, 21% 20%, 13% 34%, 3% 43%, 0% 54%, 2% 67%, 11% 71%, 23% 72%, 38% 88%, 50% 97%, 60% 100%, 72% 100%, 84% 96%, 93% 89%, 98% 23%, 95% 11%, 85% 3%);
 }
