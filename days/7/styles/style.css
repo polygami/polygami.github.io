@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:700|Montserrat:300i|Roboto+Condensed:700i|Roboto:900i');
+
+:root {
+	--color-dark: #0C0F0A;
+	--color-pink : #FF206E;
+	--color-yellow : #FBFF12;
+	--color-yellow : #FBFF12;
+	--color-turquoise : #41EAD4;
+	--color-white : #FFFFFF;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	/* background: blue; */
+}
+
+.fixed-width {
+	width: 1200px;
+	margin: auto;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+/*////////////*/
+/* NAVIGATION */
+/*////////////*/
+
+header {
+	top: 0px;
+	height: 100px;
+	width: 100%;
+	overflow: hidden;
+	background-color: rgba(12, 15, 10, 0.55);
+	position: absolute;
+}
+
+nav {
+	height: 100%;
+}
+
+nav ul a:link, nav ul a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav ul a:hover {
+	color: var(--color-yellow);
+	text-decoration: none;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	height: 100%;
+
+	color: white;
+	font-size: 30px;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+	
+	/* Flexbox Stuff */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+nav ul a {
+	transition: color 0.3s linear;
+	display: flex;
+	align-items: stretch;
+}
+
+nav ul a li {
+	/* background-color: blue; */
+	align-self: center;
+	/* display: inline-flex; */
+	/* width: 20%; */
+}
+
+nav a {
+	/* display: block; */
+	/* width: 25%; */
+}
+
+/*////////////*/
+/*    HERO    */
+/*////////////*/
+#hero-bg {
+	width: 100%;
+	height: 370px;
+	background-image: linear-gradient(163deg, #cb1a57, #a63f0d);
+	/* position: absolute; */
+	top: 0px;
+	z-index: -1;
+}
+
+#hero-content {
+	padding-top: 100px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+#hero-content h1 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 72px;
+	line-height: 1.2;
+	color: #d4e7e8;
+	text-shadow: 0px 4px rgba(0, 0, 0, 0.3);
+}
+
+#hero-content h1 .script {
+	font-family: 'Dancing Script', serif;
+	font-size: 72px;
+}
+
+#hero-content h3 {
+	margin: 0;
+	font-size: 22px;
+	line-height: 2;
+	text-align: center;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	
+	width: 680px;
+}
+
+#intro-text {
+	align-self: center;
+	width: 750px;
+	height: 175px;
+}
+
+/*///////////*/
+/*  TAG BAR  */
+/*///////////*/
+#tag-bar {
+	width: 100%;
+	height: 70px;
+	background-color: var(--color-turquoise);
+}
+
+#tag-container {
+	height: 100%;
+}
+
+.tag {
+	color: black;
+	font-family: "Montserrat", sans-serif;
+	height: 24px;
+	background-color: var(--color-yellow);
+	border: none;
+	border-radius: 12px;
+	padding: 0px 20px;
+	box-shadow: 0px 1px rgba(0, 0, 0, 0.3);
+	transform: translateY(-1px);
+	align-self: center;
+
+	transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s, color 0.2s;
+}
+
+.tag-disabled {
+	color: white;
+	background-color: darkgray;
+	box-shadow: 0px 4px rgba(0, 0, 0, 0.3);
+	transform: translateY(-4px);
+}
+
+.tag:hover {
+	filter: brightness(0.95);
+	box-shadow: 0px 1px rgba(0, 0, 0, 0.3);
+	transform: translateY(-1px);
+}
+
+.tag:focus {
+	outline:0;
+}
+
+/*///////////*/
+/*  CONTENT  */
+/*///////////*/
+
+#content {
+}
+
+#content ul {
+	list-style-type: none;
+	margin: 20px;
+	padding: 0;
+
+	/* Grid Stuff */
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-auto-rows: 180px;
+	gap: 20px
+}
+
+.card {
+	background-color: var(--color-pink);
+	transition: object-position 2s linear;
+	overflow: hidden;
+	box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+	/* position: absolute; */
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 1;
+	z-index: 1;
+	filter: grayscale(0%) blur(0px);
+	transition: opacity 0.3s ease-out, transform 0.3s ease-out, filter 0.3s ease-out;
+}
+
+.card-content {
+	position: absolute;
+	z-index: 100;
+}
+
+.card img:hover {
+	opacity: 0;
+	filter: grayscale(100%) blur(20px);;
+	transform: scale(1.2, 1.2);
+}
+
+.large {
+	grid-column-end: span 2;
+	grid-row-end: span 2;
+}
+
+.small {
+	grid-column-end: span 1;
+	grid-row-end: span 1;
+}
+
+.hidden {
+	opacity: 0;
+}
+
+.gradient-light {
+  background: -webkit-linear-gradient(#3fe9d3, #fff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
