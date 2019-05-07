@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="styles/nav.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+	
+	<header>
+		<nav class="fixed-width">
+			<button id="navButton"><i class="fas fa-bars"></i></button>
+			<ul>
+				<a target="_blank" and rel="noopener noreferrer" href="https://github.com/polygami/100-days-of-code/blob/master/log.md"><li>My Log</li></a>
+				<a target="_blank" and rel="noopener noreferrer" href="https://twitter.com/_Polygami_"><li>Twitter</li></a>
+				<a target="_blank" and rel="noopener noreferrer" href="http://polygami.co.uk"><li>Website</li></a>
+				<a target="_blank" and rel="noopener noreferrer" href="https://www.100daysofcode.com/"><li>The Challenge</li></a>
+			</ul>
+		</nav>
+	</header>
+
+	<div id="hero-bg">
+		<div id="hero-content" class="fixed-width">
+			<div>
+				<h1>100 DAYS<br><span class="script">of</span> CODE</h1>
+			</div>
+			<div id="intro-text">
+				<h3>On the quest to level up my web development skills, I have endeavored to complete the 100 Days of Code Challenge.
+						Thank you for taking your valuable time to look at my work.
+						Any advice, feedback or criticism is welcome.</h3>
+			</div>
+		</div>
+	</div>
+
+	<!-- <div id="tag-bar">
+		<div id="tag-container" class="fixed-width flex-container">
+			<button onclick="toggleTag(this)" class="tag">Incomplete</button>
+			<button onclick="toggleTag(this)" class="tag">JavaScript</button>
+			<button onclick="toggleTag(this)" class="tag">HTML</button>
+			<button onclick="toggleTag(this)" class="tag">CSS</button>
+			<button onclick="toggleTag(this)" class="tag">Node.js</button>
+			<button onclick="toggleTag(this)" class="tag">C#</button>
+			<button onclick="toggleTag(this)" class="tag">Animation</button>
+			<button onclick="toggleTag(this)" class="tag">Game Dev</button>
+		</div>
+	</div> -->
+
+	<!-- <div id="content" class="fixed-width">
+		<ul>
+			<li class="card small HTML CSS">
+				<img src="images/day-thumbnails/100-doc-thumb-001.jpg" alt="">
+			</li>
+			<li class="card small HTML CSS JavaScript">
+				<img src="images/day-thumbnails/100-doc-thumb-002.jpg" alt="">
+			</li>
+			<li class="card small HTML CSS JavaScript">
+				<img src="images/day-thumbnails/100-doc-thumb-003.jpg" alt="">
+			</li>
+			<li class="card small HTML CSS JavaScript">
+				<img src="images/day-thumbnails/100-doc-thumb-004.jpg" alt="">
+			</li>
+			<li class="card large HTML CSS JavaScript">
+				<img src="images/day-thumbnails/100-doc-thumb-005.jpg" alt="">
+			</li>
+			<li class="card small HTML CSS JavaScript">
+				<img src="images/day-thumbnails/100-doc-thumb-006.jpg" alt="">
+			</li>
+			<li class="card small HTML CSS JavaScript">
+				<img src="images/day-thumbnails/100-doc-thumb-007.jpg" alt="">
+			</li>
+			<li class="card smallIncomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card large Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card large Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card large Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+			<li class="card small Incomplete">
+				<img src="images/day-thumbnails/incomplete.jpg" alt="">
+			</li>
+		</ul>
+	</div> -->
+
+	<script src="scripts/script.js"></script>
+	<script src="scripts/nav.js"></script>
+</body>
+</html>
