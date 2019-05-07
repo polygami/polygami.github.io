@@ -1,0 +1,79 @@
+/*///////////*/
+/*  TAG BAR  */
+/*///////////*/
+#tag-bar {
+	width: 100%;
+	padding: 20px 0;
+	/* height: 70px; */
+	background-color: var(--color-turquoise);
+}
+
+#tag-container {
+	height: 100%;
+	
+}
+
+.tag {
+	color: black;
+	font-family: "Montserrat", sans-serif;
+	height: 24px;
+	background-color: var(--color-yellow);
+	border: none;
+	border-radius: 12px;
+	padding: 0px 20px;
+	margin: 5px 0;
+	box-shadow: 0px 1px rgba(0, 0, 0, 0.3);
+	transform: translateY(-1px);
+	align-self: center;
+
+	transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s, color 0.2s;
+}
+
+.tag-disabled {
+	color: white;
+	background-color: darkgray;
+	box-shadow: 0px 4px rgba(0, 0, 0, 0.3);
+	transform: translateY(-4px);
+}
+
+.tag:hover {
+	filter: brightness(0.95);
+	box-shadow: 0px 1px rgba(0, 0, 0, 0.3);
+	transform: translateY(-1px);
+}
+
+.tag:focus {
+	outline:0;
+}
+
+
+/*////////////////////////*/
+/* RESPONSIVE BREAKPOINTS */
+/*////////////////////////*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	#tag-container {
+		padding: 0px 20px;
+		
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}

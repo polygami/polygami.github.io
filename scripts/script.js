@@ -1,31 +1,37 @@
-var completedDays = 7;
-var cards = document.getElementsByClassName("card");
+var visibleTags = new Set();
 
-var progressBar = document.getElementById("progress-inner");
-var progressText = progressBar.getElementsByTagName("h4")[0];
-var percentageComplete = completedDays.toString() + "%";
+var tagButtons = document.getElementsByClassName("tag");
 
-// Iterates through all card elements and adds images based on whether or not that day is completed. 
-// If it has been completed, it will generate a path based on a naming convention.
-// If it hasn't it will add a default filler image. 
-for (let index = 0; index < cards.length; index++) {
+initializeTagsList();
 
-	card = cards[index];
-	var img = document.createElement("img");
-	
-	if (index >= completedDays) {
-		img.setAttribute("src", "/images/day-thumbnails/incomplete.jpg");
-	} else {
-		dayNumber = (index + 1).toString().padStart(3, '0');
-		var path = "/images/day-thumbnails/100-doc-thumb-" + dayNumber + ".jpg";
-		img.setAttribute("src", path)
+function initializeTagsList(){
+	for (let index = 0; index < tagButtons.length; index++) {
+		const element = tagButtons[index];
+		visibleTags.add(element.innerText);
 	}
-	
-	card.prepend(img);
 }
 
-setTimeout(function(){
-	progressBar.style.width = percentageComplete;
-	progressText.style.opacity = 1;
-	progressText.innerHTML = completedDays;
-}, 1000);
+var cards = document.getElementsByClassName("card");
+
+function toggleTag(element) {
+	var tag = element.innerText;
+	var classList = element.classList;
+	classList.toggle("tag-disabled");
+	classList.contains("tag-disabled") ? visibleTags.delete(tag) : visibleTags.add(tag);
+	console.log(visibleTags);
+	hideCards();
+}
+
+function hideCards() {
+	for (let i = 0; i < cards.length; i++) {
+		const card = cards[i];
+		console.log(card.classList);
+		var isMatchFound = false;
+		visibleTags.forEach(function(element) {
+			if (card.classList.contains(element)) {
+				isMatchFound = true;
+			}
+		})
+		isMatchFound ? card.hidden = false : card.hidden = true;
+	}
+}

@@ -1,8 +1,3 @@
-// function toggleTag(element) {
-// 	element.classList.toggle("tag-enabled");
-// }
-
-var hiddenTags = new Set([]);
 var visibleTags = new Set();
 
 var tagButtons = document.getElementsByClassName("tag");
@@ -17,17 +12,6 @@ function initializeTagsList(){
 }
 
 var cards = document.getElementsByClassName("card");
-
-// function toggleTag(element) {
-// 	element.classList.toggle("tag-enabled");
-// 	var tag = element.innerText;
-// 	var elementsWithTag = document.getElementsByClassName(tag);
-// 	for (let index = 0; index < elementsWithTag.length; index++) {
-// 		const item = elementsWithTag[index];
-// 		item.hidden = true;
-// 	}
-// 	console.log(tag);
-// }
 
 function toggleTag(element) {
 	var tag = element.innerText;
@@ -51,6 +35,3 @@ function hideCards() {
 		isMatchFound ? card.hidden = false : card.hidden = true;
 	}
 }
-
-
-// function update
