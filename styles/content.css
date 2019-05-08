@@ -81,6 +81,16 @@
 	grid-row-end: span 1;
 }
 
+.wide {
+	grid-column-end: span 2;
+	grid-row-end: span 1;
+}
+
+.tall {
+	grid-column-end: span 1;
+	grid-row-end: span 2;
+}
+
 /*////////////////////////*/
 /* RESPONSIVE BREAKPOINTS */
 /*////////////////////////*/
@@ -90,15 +100,12 @@
 		grid-template-columns: 100%;
 		grid-auto-rows: 170px;
 	}
-	.large {
+	.large, .small, .tall, .wide {
 		grid-column-end: span 1;
 		grid-row-end: span 1;
 	}
+
 	
-	.small {
-		grid-column-end: span 1;
-		grid-row-end: span 1;
-	}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
