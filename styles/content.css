@@ -39,6 +39,18 @@
 	transition: opacity 0.3s ease-out, transform 0.3s ease-out, filter 0.3s ease-out;
 }
 
+.card img.top {
+	object-position: 0% 0%;
+}
+
+.card img.middle {
+	object-position: 0% 50%;
+}
+
+.card img.bottom {
+	object-position: 0% 100%;
+}
+
 .card-overlay {
 	/* padding: 10%; */
 	top: 0px;
