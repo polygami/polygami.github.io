@@ -15,15 +15,19 @@ html {
 }
 
 body {
+	
+	background-color: red;
+}
+
+#container {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background-color: red;
 }
 
 header {
 	width: 100%;
-	background-image: url("./../images/SVG/splatter-top.svg");
+	background-image: url("https://res.cloudinary.com/doohlcatr/image/upload/v1557573928/splatter-top_vwssla.svg");
 	/* background-origin: 0% 0%; */
 	/* background-size: cover; */
 	/* background-clip: unset; */
@@ -42,7 +46,7 @@ footer {
 	width: 100%;
 	/* background-color: black; */
 	background-origin: 100% 100%;
-	background-image: url("./../images/SVG/splatter-bottom.svg");
+	background-image: url("https://res.cloudinary.com/doohlcatr/image/upload/v1557573928/splatter-bottom_o3jrck.svg");
 	background-size: 100%;
 	background-position: 50% 0%;
 	background-repeat: no-repeat;
@@ -51,7 +55,11 @@ footer {
 
 #main {
 	/* background-color: yellow; */
-	width: 1200px;
+  
+}
+
+.fixed-width {
+  width: 1200px;
 	margin: auto;
 }
 
